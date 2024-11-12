@@ -1,324 +1,70 @@
 <!doctype html>
-<html lang="es">
-
+<html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Practica</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-</head>
-<section>
-  <!--Menu-->
-  <section>
-    <nav class="navbar navbar-expand-lg navbar-light fixed-top" style="background-color: #5e035d" ;>
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#"><img src="img/logo/logo.jpg" width="30" height="30"> MMstudios</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                aria-expanded="false">
-                Navegación
-              </a>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">Action</a></li>
-                <li><a class="dropdown-item" href="#">Another action</a></li>
-                <li>
-                  <hr class="dropdown-divider">
-                </li>
-                <li><a class="dropdown-item" href="#">Something else here</a></li>
-              </ul>
-            </li>
-          </ul>
-          <form class="d-flex" role="search">
-            <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
-            <button class="btn btn-outline-info" type="submit">Buscar</button>
-          </form>
-        </div>
-      </div>
-    </nav>
-  </section>
-  <!--Carrusel de imagenes-->
-  <section>
-    <div id="carouselExampleIndicators" class="carousel slide">
-      <div class="carousel-indicators">
-        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
-          aria-current="true" aria-label="Slide 1"></button>
-        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
-          aria-label="Slide 2"></button>
-        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
-          aria-label="Slide 3"></button>
-      </div>
-      <div class="carousel-inner">
-        <div class="carousel-item active">
-          <img src="img/carrusel/celular1.jpg" class="d-block w-100" alt="...">
-        </div>
-        <div class="carousel-item">
-          <img src="img/carrusel/celular2.jpg" class="d-block w-100" alt="...">
-        </div>
-        <div class="carousel-item">
-          <img src="img/carrusel/celular3.jpg" class="d-block w-100" alt="...">
-        </div>
-      </div>
-      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
-        data-bs-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
-      </button>
-      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
-        data-bs-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
-      </button>
-    </div>
-  </section>
-  <!--Cartas de servisios-->
-  <section>
-    <div class="container">
-      <div class="row mt-5"></div>
-      <h2 class="text-center">Servicios populares.</h2>
-      <br>
-      <hr>
-      <br>
-      <div class="container text-center">
-        <div class="row">
-          <div class="col">
-            <div class="card" style="width: 18rem;">
-              <img src="img/cartas/bateria.jpg" class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">Bateria.</h5>
-                <p class="card-text">Reparación de baterias.</p>
-              </div>
-            </div>
-          </div>
-          <div class="col">
-            <div class="card" style="width: 18rem;">
-              <img src="img/cartas/pantalla.jpg" class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">Pantalla.</h5>
-                <p class="card-text">Reparación de pantallas.</p>
-              </div>
-            </div>
-          </div>
-          <div class="col">
-            <div class="card" style="width: 18rem;">
-              <img src="img/cartas/reparacion.jpg" class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">Componentes.</h5>
-                <p class="card-text">Reparación de componentes.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!--Fin menu-->
-  <!-- Tablas de precios -->
-  <section>
-    <div class="container">
-      <br>
-      <hr>
-      <h2 class="text-center"> tabla de precios</h2>
-      <hr>
-      <br>
-      <table class="table table-striped table-hover table-bordered">
-        <thead>
-          <tr>
-            <th scope="col">#</th>
-            <th scope="col">servicio</th>
-            <th scope="col">tipo</th>
-            <th scope="col">precio</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <th scope="row">1</th>
-            <td>Bateria mala</td>
-            <td>Cambio / Reparación</td>
-            <td>$10,000</td>
-          </tr>
-          <tr>
-            <th scope="row">2</th>
-            <td>Panttalla mala</td>
-            <td>Cambio / reparación</td>
-            <td>$20,000</td>
-          </tr>
-          <tr>
-            <th scope="row">3</th>
-            <td>Componentes</td>
-            <td>Cambio / reparación</td>
-            <td>$50,000</td>
-          </tr>
-          <tr>
-            <th scope="row">4</th>
-            <td>Seducción</td>
-            <td>El cliente se enamoró</td>
-            <td>$30,000</td>
-          </tr>
-          <tr>
-            <th scope="row">5</th>
-            <td>Total</td>
-            <td>Total a pagar</td>
-            <td>$120,000</td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
-  </section>
-  <!-- Acordeon de sugerencias -->
-  <section id="Sugerencias">
-    <div class="container text-center">
-      <div class="row mt-5"></div>
-      <h2>Sugerencias para Cuidar tu Teléfono</h2>
-      <hr>
-      <div class="accordion" id="accordionExample">
-        <div class="accordion-item">
-          <h2 class="accordion-header">
-            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
-              aria-expanded="true" aria-controls="collapseOne">
-              Mantén tu teléfono alejado del agua
-            </button>
-          </h2>
-          <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
-            <div class="accordion-body">
-              <strong>El agua puede ser uno de los peores enemigos de tu teléfono.</strong> Aunque algunos dispositivos
-              son resistentes al agua, la mayoría de los teléfonos pueden sufrir daños si se exponen a líquidos. Si tu
-              teléfono entra en contacto con agua, es importante apagarlo inmediatamente y llevarlo a un técnico si no
-              está funcionando correctamente.
-            </div>
-          </div>
-        </div>
-        <div class="accordion-item">
-          <h2 class="accordion-header">
-            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-              data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-              Usa una funda y un protector de pantalla
-            </button>
-          </h2>
-          <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-            <div class="accordion-body">
-              <strong>Protege tu teléfono de caídas y golpes.</strong> Utilizar una funda resistente y un protector de
-              pantalla puede prevenir daños costosos. Las fundas ayudan a amortiguar los impactos y los protectores de
-              pantalla reducen el riesgo de rayones.
-            </div>
-          </div>
-        </div>
-        <div class="accordion-item">
-          <h2 class="accordion-header">
-            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-              data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-              No dejes que la batería se descargue completamente
-            </button>
-          </h2>
-          <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-            <div class="accordion-body">
-              <strong>Evita que la batería de tu teléfono se descargue por completo.</strong> Mantener la carga de la
-              batería entre un 20% y un 80% puede prolongar la vida útil de la misma. Dejar que la batería se descargue
-              completamente puede causar que se deteriore más rápido.
-            </div>
-          </div>
-        </div>
-        <div class="accordion-item">
-          <h2 class="accordion-header">
-            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-              data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-              Revisa el rendimiento del teléfono con regularidad
-            </button>
-          </h2>
-          <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-            <div class="accordion-body">
-              <strong>Si tu teléfono está lento o se calienta, es posible que necesite mantenimiento.</strong> Revisa
-              con regularidad el rendimiento de tu dispositivo y considera llevarlo a reparar si notas que se calienta
-              demasiado o si las aplicaciones tardan en abrir.
-            </div>
-          </div>
-        </div>
-        <div class="accordion-item">
-          <h2 class="accordion-header">
-            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-              data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
-              Lleva tu teléfono a revisar si hay problemas con el puerto de carga
-            </button>
-          </h2>
-          <div id="collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-            <div class="accordion-body">
-              <strong>Si tu teléfono no carga correctamente, el puerto de carga podría estar dañado.</strong> Si notas
-              que tienes que mover el cable para que funcione o que no carga en absoluto, podría ser necesario llevarlo
-              a un servicio técnico para revisar el puerto de carga.
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="row mt-5"></div>
-    </div>
-  </section>
-  <!-- Mapa-->
-  <section id="mapa">
-    <div class="container text-center">
-      <div class="row mt-5"></div>
-      <h2>Ubicación</h2>
-      <br>
-      <hr>
-      <div class="row justify-content-center">
-        <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3766.47006274293!2d-103.72624922644401!3d19.261914081981313!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x84255ac989b702cf%3A0xd6b8fbaecb0c480f!2sTecNM%20-%20Campus%20Colima!5e0!3m2!1ses-419!2smx!4v1728609562745!5m2!1ses-419!2smx"
-          width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-          referrerpolicy="no-referrer-when-downgrade"></iframe>
-      </div>
-  </section>
-  <!-- Formulario -->
-  <section>
-    <div class="container text-center">
-      <div class="row mt-5"></div>
-      <h2>Envianos tu comentario</h2>
-      <br>
-      <hr>
-      <div class="row justify-content-center">
-        <section id="Formulario">
-          <div class="container text-center">
-            <div class="row mt-5"></div>
-            <h2>Envianos tu comentario</h2>
-            <hr>
-            <div class="row justify-content-center justify-content-center">
-              <div class="col-5">
-                <form>
-                  <div class="mb-3">
-                    <label for="exampleInputEmail1" class="form-label">Correo Electronico</label>
-                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-                  </div>
-                  <div class="mb-3">
-                    <label for="exampleComment" class="form-label">Comentario</label>
-                    <input type="text" class="form-control" id="exampleComment">
-                  </div>
-                  <button type="submit" class="btn btn-primary">Enviar</button>
-                </form>
-              </div>
-            </div>
-            <div class="row mt-5"></div>
-            <div class="col"></div>
-        </section>
-      </div>
-    </div>
-  </section>
-  <footer style="background-color: blueviolet;">
-    <div class="container text-center">
-      <div class="row mt-5"></div>
-      <h2>MMstudios</h2>
-      <p>Copyright © 2023. Todos los derechos reservados.</p>
-    </div>
-  </footer>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-    crossorigin="anonymous"></script>
-  </body>
+    <script src="function.js"></script> 
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <style>
+      /* Estilos personalizados para colores adicionales */
+      .btn-brown { background-color: #8B4513; color: white; }
+      .btn-orange { background-color: #FFA500; color: white; }
+      .btn-purple { background-color: #800080; color: white; }
+      .btn-white { background-color: #FFFFFF; color: black; border: 1px solid #ccc; }
+      .btn-gold { background-color: #FFD700; color: black; }
+      .btn-silver { background-color: #C0C0C0; color: black; }
 
+      /* Estilos personalizados para los colores seleccionados */
+      .badge-brown { background-color: #8B4513; color: white; }
+      .badge-orange { background-color: #FFA500; color: white; }
+      .badge-purple { background-color: #800080; color: white; }
+      .badge-white { background-color: #FFFFFF; color: black; border: 1px solid #ccc; }
+      .badge-gold { background-color: #FFD700; color: black; }
+      .badge-silver { background-color: #C0C0C0; color: black; }
+    </style>
+</head>
+<body>
+<div class="card text-center">
+  <div class="card-header" style="margin-left: 0px; margin-right: 0px;">
+    <h1>Resistencia 4 o 5 bandas :</h1>
+  </div>
+  <div class="card-body" style="margin:0px;">
+    <!-- Contenedor de imágenes en una sola fila -->
+    <div class="d-flex flex-wrap justify-content-center align-items-center"">
+        <img src="inicio.jpeg" style="width: 100px; height: 50px;">
+        
+        <!-- Contenedor para los colores seleccionados principales, centrado -->
+        <div id="selected-colors" class="d-flex justify-content-center mx-3" style="height: 60px;">
+          <!-- Aquí se mostrarán los colores seleccionados -->
+        </div>
+        
+        <img src="final.jpeg" style="width: 100px; height: 50px;">
+    </div>
+  </div>
+  <div class="card-footer text-muted">
+    <!-- Botones de colores -->
+    <button type="button" class="btn btn-dark" onclick="addColor(',', 'badge bg-dark', 0)">Negro</button>
+    <button type="button" class="btn btn-brown" onclick="addColor(',', 'badge badge-brown', 1)">Marrón</button>
+    <button type="button" class="btn btn-danger" onclick="addColor(',', 'badge bg-danger', 2)">Rojo</button>
+    <button type="button" class="btn btn-orange" onclick="addColor(',', 'badge badge-orange', 3)">Naranja</button>
+    <button type="button" class="btn btn-warning" onclick="addColor(',', 'badge bg-warning', 4)">Amarillo</button>
+    <button type="button" class="btn btn-success" onclick="addColor(',', 'badge bg-success', 5)">Verde</button>
+    <button type="button" class="btn btn-primary" onclick="addColor(',', 'badge bg-primary', 6)">Azul</button>
+    <button type="button" class="btn btn-purple" onclick="addColor(',', 'badge badge-purple', 7)">Violeta</button>
+    <button type="button" class="btn btn-secondary" onclick="addColor(',', 'badge bg-secondary', 8)">Gris</button>
+    <button type="button" class="btn btn-white" onclick="addColor(',', 'badge badge-white', 9)">Blanco</button>
+    <button type="button" class="btn btn-gold" onclick="addTolerance(',', 'badge badge-gold', 5)">Oro</button>
+    <button type="button" class="btn btn-silver" onclick="addTolerance(',', 'badge badge-silver', 10)">Plata</button>
+
+    <!-- Icono SVG para eliminar el último color seleccionado -->
+    <svg onclick="removeLastColor()" style="cursor: pointer;" xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor" class="bi bi-x-square" viewBox="0 0 16 16">
+      <path d="M14 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1zM2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2z"/>
+      <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708"/>
+    </svg>
+  </div>
+  <!-- Fila para mostrar el resultado de la resistencia -->
+  <div class="card-body">
+    <h2>Valor de la Resistencia: <span id="resistance-value">0 Ω</span></h2>
+    <h2>Tolerancia: <span id="tolerance-value">N/A</span></h2>
+  </div>
+</div>
+</body>
 </html>
